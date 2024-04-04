@@ -52,6 +52,7 @@ namespace sort
 
         private void btnTao_Click(object sender, EventArgs e)
         {
+            btn_Start.Enabled = false;
             lbl_bienj.Visible = false;
             lbl_bieni.Visible = false;
             lbl_bienx.Visible = false;
@@ -150,7 +151,7 @@ namespace sort
             {
                 btn_Nhaptay.Enabled = false;
                 btn_Random.Enabled = false;
-                btn_start.Enabled = false;
+                
                 btn_Docfile.Enabled = false;
                 if (da_Tao_Mang == true)
                 {
@@ -190,7 +191,15 @@ namespace sort
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
-            MessageBox.Show("Tốc độ:" + Zoomcode.Value.ToString());
+            Application.DoEvents();
+            this.Invoke((MethodInvoker)delegate
+            {
+                if (zoomCode.Value > 0)
+                {
+                    lb_List_Code.Font = new Font("Consolas", 8 + zoomCode.Value, FontStyle.Regular);
+                }
+            });
+
         }
 
         private void lbListCode_SelectedIndexChanged(object sender, EventArgs e)
@@ -234,6 +243,16 @@ namespace sort
             else
                 e.Cancel = true;
                 
+        }
+
+        private void btn_start_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rad_Selection_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

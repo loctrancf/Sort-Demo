@@ -93,5 +93,12 @@
   <ItemGroup>
     <None Include="Resources\Image_nut.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Image1.png" />
+    <None Include="Resources\media_fast_forward.png" />
+    <None Include="Resources\media_pause.png" />
+    <None Include="Resources\media_play.png" />
+    <None Include="Resources\z5316969615476_2023224fcefe4e4f6a1e41e3f39574f7.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

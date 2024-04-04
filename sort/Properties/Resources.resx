@@ -118,7 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="media_pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\media_pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="media_play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\media_play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Image_nut" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Image_nut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z5316969615476_2023224fcefe4e4f6a1e41e3f39574f7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z5316969615476_2023224fcefe4e4f6a1e41e3f39574f7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="media_fast_forward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\media_fast_forward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

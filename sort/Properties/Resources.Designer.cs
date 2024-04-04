@@ -69,5 +69,45 @@ namespace sort.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap media_fast_forward {
+            get {
+                object obj = ResourceManager.GetObject("media_fast_forward", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap media_pause {
+            get {
+                object obj = ResourceManager.GetObject("media_pause", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap media_play {
+            get {
+                object obj = ResourceManager.GetObject("media_play", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z5316969615476_2023224fcefe4e4f6a1e41e3f39574f7 {
+            get {
+                object obj = ResourceManager.GetObject("z5316969615476_2023224fcefe4e4f6a1e41e3f39574f7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

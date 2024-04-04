@@ -30,7 +30,8 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.grbControl = new System.Windows.Forms.GroupBox();
-            this.btn_start = new System.Windows.Forms.Button();
+            this.trackBar3 = new System.Windows.Forms.TrackBar();
+            this.Tocdo = new System.Windows.Forms.TrackBar();
             this.chk_Tungbuoc = new System.Windows.Forms.CheckBox();
             this.rad_Giam = new System.Windows.Forms.RadioButton();
             this.rad_Tang = new System.Windows.Forms.RadioButton();
@@ -42,8 +43,8 @@
             this.rad_Selection = new System.Windows.Forms.RadioButton();
             this.rad_Bubble = new System.Windows.Forms.RadioButton();
             this.grbCodeC = new System.Windows.Forms.GroupBox();
-            this.Zoomcode = new System.Windows.Forms.TrackBar();
-            this.lbList_Code = new System.Windows.Forms.ListBox();
+            this.zoomCode = new System.Windows.Forms.TrackBar();
+            this.lb_List_Code = new System.Windows.Forms.ListBox();
             this.grbDulieu = new System.Windows.Forms.GroupBox();
             this.grb_Taogiatri = new System.Windows.Forms.GroupBox();
             this.lblDieukien = new System.Windows.Forms.Label();
@@ -61,19 +62,20 @@
             this.lbl_code = new System.Windows.Forms.Label();
             this.lbl_bienj = new System.Windows.Forms.Label();
             this.lbl_bienx = new System.Windows.Forms.Label();
-            this.Tocdo = new System.Windows.Forms.TrackBar();
-            this.trackBar3 = new System.Windows.Forms.TrackBar();
+            this.btn_Break = new System.Windows.Forms.Button();
+            this.btn_Pause = new System.Windows.Forms.Button();
+            this.btn_Start = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.grbControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Tocdo)).BeginInit();
             this.grbThuattoan.SuspendLayout();
             this.grbCodeC.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Zoomcode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomCode)).BeginInit();
             this.grbDulieu.SuspendLayout();
             this.grb_Taogiatri.SuspendLayout();
             this.grbKhoitaomang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrSophantu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Tocdo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -91,12 +93,15 @@
             // grbControl
             // 
             this.grbControl.BackColor = System.Drawing.Color.Thistle;
+            this.grbControl.Controls.Add(this.btn_Break);
+            this.grbControl.Controls.Add(this.btn_Pause);
             this.grbControl.Controls.Add(this.trackBar3);
             this.grbControl.Controls.Add(this.Tocdo);
-            this.grbControl.Controls.Add(this.btn_start);
+            this.grbControl.Controls.Add(this.btn_Start);
             this.grbControl.Controls.Add(this.chk_Tungbuoc);
             this.grbControl.Controls.Add(this.rad_Giam);
             this.grbControl.Controls.Add(this.rad_Tang);
+            this.grbControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbControl.Location = new System.Drawing.Point(879, 11);
             this.grbControl.Name = "grbControl";
             this.grbControl.Size = new System.Drawing.Size(187, 247);
@@ -105,14 +110,22 @@
             this.grbControl.Text = "Điều khiển";
             this.grbControl.Enter += new System.EventHandler(this.grbDieukhien_Enter);
             // 
-            // btn_start
+            // trackBar3
             // 
-            this.btn_start.Location = new System.Drawing.Point(19, 134);
-            this.btn_start.Name = "btn_start";
-            this.btn_start.Size = new System.Drawing.Size(49, 29);
-            this.btn_start.TabIndex = 3;
-            this.btn_start.Text = "button1";
-            this.btn_start.UseVisualStyleBackColor = true;
+            this.trackBar3.Location = new System.Drawing.Point(126, 27);
+            this.trackBar3.Name = "trackBar3";
+            this.trackBar3.Size = new System.Drawing.Size(8, 45);
+            this.trackBar3.TabIndex = 5;
+            // 
+            // Tocdo
+            // 
+            this.Tocdo.BackColor = System.Drawing.Color.MediumOrchid;
+            this.Tocdo.Location = new System.Drawing.Point(136, 27);
+            this.Tocdo.Name = "Tocdo";
+            this.Tocdo.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.Tocdo.Size = new System.Drawing.Size(45, 165);
+            this.Tocdo.TabIndex = 4;
+            this.Tocdo.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // chk_Tungbuoc
             // 
@@ -121,7 +134,7 @@
             this.chk_Tungbuoc.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chk_Tungbuoc.Location = new System.Drawing.Point(19, 97);
             this.chk_Tungbuoc.Name = "chk_Tungbuoc";
-            this.chk_Tungbuoc.Size = new System.Drawing.Size(101, 17);
+            this.chk_Tungbuoc.Size = new System.Drawing.Size(124, 19);
             this.chk_Tungbuoc.TabIndex = 2;
             this.chk_Tungbuoc.Text = "Chạy từng bước";
             this.chk_Tungbuoc.UseVisualStyleBackColor = true;
@@ -132,7 +145,7 @@
             this.rad_Giam.AutoSize = true;
             this.rad_Giam.Location = new System.Drawing.Point(19, 61);
             this.rad_Giam.Name = "rad_Giam";
-            this.rad_Giam.Size = new System.Drawing.Size(91, 17);
+            this.rad_Giam.Size = new System.Drawing.Size(115, 19);
             this.rad_Giam.TabIndex = 1;
             this.rad_Giam.TabStop = true;
             this.rad_Giam.Text = "Sắp xếp Giảm";
@@ -143,7 +156,7 @@
             this.rad_Tang.AutoSize = true;
             this.rad_Tang.Location = new System.Drawing.Point(19, 28);
             this.rad_Tang.Name = "rad_Tang";
-            this.rad_Tang.Size = new System.Drawing.Size(92, 17);
+            this.rad_Tang.Size = new System.Drawing.Size(113, 19);
             this.rad_Tang.TabIndex = 0;
             this.rad_Tang.TabStop = true;
             this.rad_Tang.Text = "Sắp xếp Tăng";
@@ -158,6 +171,7 @@
             this.grbThuattoan.Controls.Add(this.rad_Insertion);
             this.grbThuattoan.Controls.Add(this.rad_Selection);
             this.grbThuattoan.Controls.Add(this.rad_Bubble);
+            this.grbThuattoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbThuattoan.Location = new System.Drawing.Point(707, 11);
             this.grbThuattoan.Name = "grbThuattoan";
             this.grbThuattoan.Size = new System.Drawing.Size(166, 247);
@@ -168,9 +182,9 @@
             // rad_Merge
             // 
             this.rad_Merge.AutoSize = true;
-            this.rad_Merge.Location = new System.Drawing.Point(29, 191);
+            this.rad_Merge.Location = new System.Drawing.Point(26, 168);
             this.rad_Merge.Name = "rad_Merge";
-            this.rad_Merge.Size = new System.Drawing.Size(77, 17);
+            this.rad_Merge.Size = new System.Drawing.Size(101, 20);
             this.rad_Merge.TabIndex = 5;
             this.rad_Merge.TabStop = true;
             this.rad_Merge.Text = "Merge Sort";
@@ -179,9 +193,9 @@
             // rad_Heap
             // 
             this.rad_Heap.AutoSize = true;
-            this.rad_Heap.Location = new System.Drawing.Point(29, 162);
+            this.rad_Heap.Location = new System.Drawing.Point(26, 140);
             this.rad_Heap.Name = "rad_Heap";
-            this.rad_Heap.Size = new System.Drawing.Size(76, 17);
+            this.rad_Heap.Size = new System.Drawing.Size(99, 20);
             this.rad_Heap.TabIndex = 4;
             this.rad_Heap.TabStop = true;
             this.rad_Heap.Text = "Heap Sort ";
@@ -190,9 +204,9 @@
             // rad_Quick
             // 
             this.rad_Quick.AutoSize = true;
-            this.rad_Quick.Location = new System.Drawing.Point(29, 133);
+            this.rad_Quick.Location = new System.Drawing.Point(26, 112);
             this.rad_Quick.Name = "rad_Quick";
-            this.rad_Quick.Size = new System.Drawing.Size(75, 17);
+            this.rad_Quick.Size = new System.Drawing.Size(96, 20);
             this.rad_Quick.TabIndex = 3;
             this.rad_Quick.TabStop = true;
             this.rad_Quick.Text = "Quick Sort";
@@ -201,9 +215,9 @@
             // rad_Insertion
             // 
             this.rad_Insertion.AutoSize = true;
-            this.rad_Insertion.Location = new System.Drawing.Point(29, 97);
+            this.rad_Insertion.Location = new System.Drawing.Point(26, 84);
             this.rad_Insertion.Name = "rad_Insertion";
-            this.rad_Insertion.Size = new System.Drawing.Size(90, 17);
+            this.rad_Insertion.Size = new System.Drawing.Size(120, 20);
             this.rad_Insertion.TabIndex = 2;
             this.rad_Insertion.TabStop = true;
             this.rad_Insertion.Text = "Inserttion Sort";
@@ -212,20 +226,21 @@
             // rad_Selection
             // 
             this.rad_Selection.AutoSize = true;
-            this.rad_Selection.Location = new System.Drawing.Point(29, 61);
+            this.rad_Selection.Location = new System.Drawing.Point(26, 56);
             this.rad_Selection.Name = "rad_Selection";
-            this.rad_Selection.Size = new System.Drawing.Size(91, 17);
+            this.rad_Selection.Size = new System.Drawing.Size(122, 20);
             this.rad_Selection.TabIndex = 1;
             this.rad_Selection.TabStop = true;
             this.rad_Selection.Text = "Selection Sort";
             this.rad_Selection.UseVisualStyleBackColor = true;
+            this.rad_Selection.CheckedChanged += new System.EventHandler(this.rad_Selection_CheckedChanged);
             // 
             // rad_Bubble
             // 
             this.rad_Bubble.AutoSize = true;
-            this.rad_Bubble.Location = new System.Drawing.Point(29, 28);
+            this.rad_Bubble.Location = new System.Drawing.Point(26, 28);
             this.rad_Bubble.Name = "rad_Bubble";
-            this.rad_Bubble.Size = new System.Drawing.Size(80, 17);
+            this.rad_Bubble.Size = new System.Drawing.Size(106, 20);
             this.rad_Bubble.TabIndex = 0;
             this.rad_Bubble.TabStop = true;
             this.rad_Bubble.Text = "Bubble Sort";
@@ -234,8 +249,9 @@
             // grbCodeC
             // 
             this.grbCodeC.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.grbCodeC.Controls.Add(this.Zoomcode);
-            this.grbCodeC.Controls.Add(this.lbList_Code);
+            this.grbCodeC.Controls.Add(this.zoomCode);
+            this.grbCodeC.Controls.Add(this.lb_List_Code);
+            this.grbCodeC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbCodeC.Location = new System.Drawing.Point(260, 11);
             this.grbCodeC.Name = "grbCodeC";
             this.grbCodeC.Size = new System.Drawing.Size(444, 247);
@@ -243,32 +259,33 @@
             this.grbCodeC.TabStop = false;
             this.grbCodeC.Text = "Code C/C++";
             // 
-            // Zoomcode
+            // zoomCode
             // 
-            this.Zoomcode.AutoSize = false;
-            this.Zoomcode.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.Zoomcode.Location = new System.Drawing.Point(59, 17);
-            this.Zoomcode.Name = "Zoomcode";
-            this.Zoomcode.Size = new System.Drawing.Size(315, 22);
-            this.Zoomcode.TabIndex = 10;
-            this.Zoomcode.Value = 5;
-            this.Zoomcode.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            this.zoomCode.AutoSize = false;
+            this.zoomCode.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.zoomCode.Location = new System.Drawing.Point(59, 17);
+            this.zoomCode.Name = "zoomCode";
+            this.zoomCode.Size = new System.Drawing.Size(315, 22);
+            this.zoomCode.TabIndex = 10;
+            this.zoomCode.Value = 5;
+            this.zoomCode.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
-            // lbList_Code
+            // lb_List_Code
             // 
-            this.lbList_Code.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lbList_Code.FormattingEnabled = true;
-            this.lbList_Code.Location = new System.Drawing.Point(3, 45);
-            this.lbList_Code.Name = "lbList_Code";
-            this.lbList_Code.Size = new System.Drawing.Size(438, 199);
-            this.lbList_Code.TabIndex = 0;
-            this.lbList_Code.SelectedIndexChanged += new System.EventHandler(this.lbListCode_SelectedIndexChanged);
+            this.lb_List_Code.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lb_List_Code.FormattingEnabled = true;
+            this.lb_List_Code.Location = new System.Drawing.Point(3, 45);
+            this.lb_List_Code.Name = "lb_List_Code";
+            this.lb_List_Code.Size = new System.Drawing.Size(438, 199);
+            this.lb_List_Code.TabIndex = 0;
+            this.lb_List_Code.SelectedIndexChanged += new System.EventHandler(this.lbListCode_SelectedIndexChanged);
             // 
             // grbDulieu
             // 
             this.grbDulieu.BackColor = System.Drawing.Color.BurlyWood;
             this.grbDulieu.Controls.Add(this.grb_Taogiatri);
             this.grbDulieu.Controls.Add(this.grbKhoitaomang);
+            this.grbDulieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbDulieu.Location = new System.Drawing.Point(3, 11);
             this.grbDulieu.Name = "grbDulieu";
             this.grbDulieu.Size = new System.Drawing.Size(254, 247);
@@ -291,7 +308,7 @@
             // 
             // lblDieukien
             // 
-            this.lblDieukien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDieukien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDieukien.Location = new System.Drawing.Point(12, 30);
             this.lblDieukien.Name = "lblDieukien";
             this.lblDieukien.Size = new System.Drawing.Size(71, 44);
@@ -313,7 +330,7 @@
             // 
             this.btn_Nhaptay.AutoSize = true;
             this.btn_Nhaptay.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btn_Nhaptay.Location = new System.Drawing.Point(151, 7);
+            this.btn_Nhaptay.Location = new System.Drawing.Point(151, 16);
             this.btn_Nhaptay.Name = "btn_Nhaptay";
             this.btn_Nhaptay.Size = new System.Drawing.Size(88, 32);
             this.btn_Nhaptay.TabIndex = 2;
@@ -323,11 +340,11 @@
             // btn_Random
             // 
             this.btn_Random.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btn_Random.Location = new System.Drawing.Point(151, 45);
+            this.btn_Random.Location = new System.Drawing.Point(151, 50);
             this.btn_Random.Name = "btn_Random";
             this.btn_Random.Size = new System.Drawing.Size(88, 32);
             this.btn_Random.TabIndex = 3;
-            this.btn_Random.Text = "Ngẫu nhiên";
+            this.btn_Random.Text = "Random";
             this.btn_Random.UseVisualStyleBackColor = false;
             // 
             // grbKhoitaomang
@@ -367,7 +384,7 @@
             0,
             0});
             this.nmrSophantu.Name = "nmrSophantu";
-            this.nmrSophantu.Size = new System.Drawing.Size(120, 20);
+            this.nmrSophantu.Size = new System.Drawing.Size(120, 21);
             this.nmrSophantu.TabIndex = 1;
             this.nmrSophantu.Value = new decimal(new int[] {
             1,
@@ -378,7 +395,7 @@
             // 
             // lblSophantu
             // 
-            this.lblSophantu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSophantu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSophantu.Location = new System.Drawing.Point(6, 16);
             this.lblSophantu.Name = "lblSophantu";
             this.lblSophantu.Size = new System.Drawing.Size(132, 22);
@@ -410,7 +427,8 @@
             // 
             // lbl_bieni
             // 
-            this.lbl_bieni.Location = new System.Drawing.Point(915, 41);
+            this.lbl_bieni.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_bieni.Location = new System.Drawing.Point(813, 50);
             this.lbl_bieni.Name = "lbl_bieni";
             this.lbl_bieni.Size = new System.Drawing.Size(96, 39);
             this.lbl_bieni.TabIndex = 3;
@@ -418,7 +436,8 @@
             // 
             // lbl_code
             // 
-            this.lbl_code.Location = new System.Drawing.Point(237, 24);
+            this.lbl_code.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_code.Location = new System.Drawing.Point(439, 22);
             this.lbl_code.Name = "lbl_code";
             this.lbl_code.Size = new System.Drawing.Size(368, 58);
             this.lbl_code.TabIndex = 4;
@@ -426,7 +445,8 @@
             // 
             // lbl_bienj
             // 
-            this.lbl_bienj.Location = new System.Drawing.Point(916, 100);
+            this.lbl_bienj.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_bienj.Location = new System.Drawing.Point(813, 80);
             this.lbl_bienj.Name = "lbl_bienj";
             this.lbl_bienj.Size = new System.Drawing.Size(104, 30);
             this.lbl_bienj.TabIndex = 5;
@@ -434,35 +454,47 @@
             // 
             // lbl_bienx
             // 
-            this.lbl_bienx.Location = new System.Drawing.Point(918, 136);
+            this.lbl_bienx.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_bienx.Location = new System.Drawing.Point(813, 110);
             this.lbl_bienx.Name = "lbl_bienx";
             this.lbl_bienx.Size = new System.Drawing.Size(80, 34);
             this.lbl_bienx.TabIndex = 6;
             this.lbl_bienx.Text = "label3";
             // 
-            // Tocdo
+            // btn_Break
             // 
-            this.Tocdo.BackColor = System.Drawing.Color.MediumOrchid;
-            this.Tocdo.Location = new System.Drawing.Point(136, 27);
-            this.Tocdo.Name = "Tocdo";
-            this.Tocdo.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.Tocdo.Size = new System.Drawing.Size(45, 165);
-            this.Tocdo.TabIndex = 4;
-            this.Tocdo.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.btn_Break.Image = global::sort.Properties.Resources.media_fast_forward;
+            this.btn_Break.Location = new System.Drawing.Point(52, 172);
+            this.btn_Break.Name = "btn_Break";
+            this.btn_Break.Size = new System.Drawing.Size(37, 36);
+            this.btn_Break.TabIndex = 7;
+            this.btn_Break.UseVisualStyleBackColor = true;
             // 
-            // trackBar3
+            // btn_Pause
             // 
-            this.trackBar3.Location = new System.Drawing.Point(126, 27);
-            this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(8, 45);
-            this.trackBar3.TabIndex = 5;
+            this.btn_Pause.Image = global::sort.Properties.Resources.media_pause;
+            this.btn_Pause.Location = new System.Drawing.Point(83, 133);
+            this.btn_Pause.Name = "btn_Pause";
+            this.btn_Pause.Size = new System.Drawing.Size(37, 36);
+            this.btn_Pause.TabIndex = 6;
+            this.btn_Pause.UseVisualStyleBackColor = true;
+            // 
+            // btn_Start
+            // 
+            this.btn_Start.Image = global::sort.Properties.Resources.media_play;
+            this.btn_Start.Location = new System.Drawing.Point(19, 133);
+            this.btn_Start.Name = "btn_Start";
+            this.btn_Start.Size = new System.Drawing.Size(37, 36);
+            this.btn_Start.TabIndex = 3;
+            this.btn_Start.UseVisualStyleBackColor = true;
+            this.btn_Start.Click += new System.EventHandler(this.btn_start_Click);
             // 
             // Form_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(1066, 592);
+            this.ClientSize = new System.Drawing.Size(1069, 590);
             this.Controls.Add(this.lbl_bienx);
             this.Controls.Add(this.lbl_bienj);
             this.Controls.Add(this.lbl_code);
@@ -479,17 +511,17 @@
             this.panel1.ResumeLayout(false);
             this.grbControl.ResumeLayout(false);
             this.grbControl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Tocdo)).EndInit();
             this.grbThuattoan.ResumeLayout(false);
             this.grbThuattoan.PerformLayout();
             this.grbCodeC.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Zoomcode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomCode)).EndInit();
             this.grbDulieu.ResumeLayout(false);
             this.grb_Taogiatri.ResumeLayout(false);
             this.grb_Taogiatri.PerformLayout();
             this.grbKhoitaomang.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nmrSophantu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Tocdo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -518,8 +550,8 @@
         private System.Windows.Forms.RadioButton rad_Insertion;
         private System.Windows.Forms.RadioButton rad_Selection;
         private System.Windows.Forms.RadioButton rad_Bubble;
-        private System.Windows.Forms.ListBox lbList_Code;
-        private System.Windows.Forms.TrackBar Zoomcode;
+        private System.Windows.Forms.ListBox lb_List_Code;
+        private System.Windows.Forms.TrackBar zoomCode;
         private System.Windows.Forms.Label lbl_MangA;
         private System.Windows.Forms.Label lbl_Index;
         private System.Windows.Forms.Label lbl_bieni;
@@ -528,9 +560,11 @@
         private System.Windows.Forms.Label lbl_bienj;
         private System.Windows.Forms.Label lbl_bienx;
         private System.Windows.Forms.GroupBox grb_Taogiatri;
-        private System.Windows.Forms.Button btn_start;
+        private System.Windows.Forms.Button btn_Start;
         private System.Windows.Forms.TrackBar trackBar3;
         private System.Windows.Forms.TrackBar Tocdo;
+        private System.Windows.Forms.Button btn_Break;
+        private System.Windows.Forms.Button btn_Pause;
     }
 }
 
