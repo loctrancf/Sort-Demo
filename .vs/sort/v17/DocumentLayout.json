@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\winform\\sort\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F4EEA2-FDD9-4744-924F-CB85713BF36C}|sort\\sort.csproj|D:\\winform\\sort\\sort\\form_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7F4EEA2-FDD9-4744-924F-CB85713BF36C}|sort\\sort.csproj|solutionrelative:sort\\form_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F4EEA2-FDD9-4744-924F-CB85713BF36C}|sort\\sort.csproj|D:\\winform\\sort\\sort\\form_nhapgt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F4EEA2-FDD9-4744-924F-CB85713BF36C}|sort\\sort.csproj|solutionrelative:sort\\form_nhapgt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F4EEA2-FDD9-4744-924F-CB85713BF36C}|sort\\sort.csproj|D:\\winform\\sort\\sort\\form_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F4EEA2-FDD9-4744-924F-CB85713BF36C}|sort\\sort.csproj|solutionrelative:sort\\form_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F4EEA2-FDD9-4744-924F-CB85713BF36C}|sort\\sort.csproj|d:\\winform\\sort\\sort\\list_code.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F4EEA2-FDD9-4744-924F-CB85713BF36C}|sort\\sort.csproj|solutionrelative:sort\\list_code.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form_main.cs [Design]",
+              "DocumentMoniker": "D:\\winform\\sort\\sort\\Form_main.cs",
+              "RelativeDocumentMoniker": "sort\\Form_main.cs",
+              "ToolTip": "D:\\winform\\sort\\sort\\Form_main.cs [Design]",
+              "RelativeToolTip": "sort\\Form_main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T08:03:34.097Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "List_Code.cs",
+              "DocumentMoniker": "D:\\winform\\sort\\sort\\List_Code.cs",
+              "RelativeDocumentMoniker": "sort\\List_Code.cs",
+              "ToolTip": "D:\\winform\\sort\\sort\\List_Code.cs",
+              "RelativeToolTip": "sort\\List_Code.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAiwEEAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T14:16:06.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form_main.cs",
+              "DocumentMoniker": "D:\\winform\\sort\\sort\\Form_main.cs",
+              "RelativeDocumentMoniker": "sort\\Form_main.cs",
+              "ToolTip": "D:\\winform\\sort\\sort\\Form_main.cs",
+              "RelativeToolTip": "sort\\Form_main.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAMwCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T12:56:52.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form_nhapgt.cs",
+              "DocumentMoniker": "D:\\winform\\sort\\sort\\Form_nhapgt.cs",
+              "RelativeDocumentMoniker": "sort\\Form_nhapgt.cs",
+              "ToolTip": "D:\\winform\\sort\\sort\\Form_nhapgt.cs",
+              "RelativeToolTip": "sort\\Form_nhapgt.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T03:27:33.118Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
